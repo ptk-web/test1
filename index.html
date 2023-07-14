@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <script src="https://unpkg.com/scrollreveal"></script>/
+    <!-- the above link is cdn link to connect the scrollreaveal website.s -->
+    <style>
+        
+        #lab1
+        {
+            border: 2px solid black;
+            width: 50%;
+            margin: 50px;
+            padding: 20px;
+            display: block;
+        }
+        .div1
+        {
+            border: 2px solid red;
+            margin: 30px;
+            width: 20px;
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="JsJSON.html">Go to JSON</a><br>
+        <a href="Displayexercise.html">Go to Display Exercise</a><br>
+        <a href="Css Position.html">Go to Position</a><br>
+    </nav>
+    <label id="lab1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolor totam aliquam esse facilis corporis sapiente voluptatibus labore incidunt consequatur corrupti fugiat aperiam omnis vitae repellat suscipit iure, unde illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum autem harum rerum veniam officiis temporibus repellendus veritatis voluptas asperiores eaque, aliquam nobis? Perspiciatis voluptas neque sequi ab mollitia commodi.</label>
+    <style>
+        .dis-example{display: none;}
+        /*.dis-example{display: block;}*//*block/inline-block/inline can be used to remove the effect of display:none*/
+    </style>
+
+    <hr>
+    <label class="dis-example">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</label>
+    <hr>
+
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quis corrupti sint ea dolorem cumque, libero eos dolorum esse autem eveniet quas velit exercitationem inventore laborum iusto incidunt tenetur perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quasi voluptas, nemo velit rerum at aperiam autem maiores aut ut, veniam excepturi! Enim aperiam ad voluptas unde eligendi ex expedita.</div>
+    <hr style="border-bottom: white;border-style: none;">
+
+    <style>
+        #product-card
+        {
+            width: 320px;
+            margin: 20px;
+            box-shadow: 1px 1px 8px 4px rgba(0 , 0, 0, 0.7);
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 20px;
+            font-family: Calibri;
+            display: inline-block;
+        }
+        td{min-width: 105px;}
+        .detail
+        {
+            text-decoration: none;
+            display: block;
+            border: 2px solid black;
+            padding: 8px 20px 8px 10px;
+            width: fit-content;
+            background-color:navy;
+            color: white;
+            border-radius: 10px;
+            margin: auto;
+            transform: translate(-30%,0);/*-values move to the left */
+        }
+        .detail:hover
+        {
+            background-color: transparent;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+    <div id="product-card">
+        <img src="Acer-Nitro-2022-01.webp" width="100%" /*style="border-radius: 20px;"*/ style="transform:scale(1.1);margin-bottom: 10px;">
+        <table border="0" width="100%" height="160px">
+            <tr>
+                <td><label style=/*"float: right;"*/>Laptop:</label></td>
+                <td>Nitro 5 Gaming</td>
+            </tr>
+            <tr>
+                <td><label style="float: left;">Brand:</label></td>
+                <td>Acer</td>
+            </tr>
+           
+            <tr>
+                <td><label style="/*display: block;width: fit-content; margin: auto;*/">Specification:</label></td>
+                <td>CPU: i5 11 gen <br>
+                    GPU: RTX 3050 4GB</td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="" class="detail">More Detail</a></td>
+            </tr>
+       </table>
+       </div>
+    <script>
+        ScrollReveal().reveal('#product-card', {
+         delay: 400,/*1000milisec=1 sec*/
+         duration:2000,
+         distance:'400px',
+         origin : 'left',
+         reset: true
+         
+     });
+    </script>
+
+    <div id="product-card">
+        <img src="Acer-Nitro-2022-01.webp" width="100%" /*style="border-radius: 20px;"*/ style="transform:scale(1.1);margin-bottom: 10px;">
+        <table border="0" width="100%" height="160px">
+            <tr>
+                <td><label style=/*"float: right;"*/>Laptop:</label></td>
+                <td>Nitro 5 Gaming</td>
+            </tr>
+            <tr>
+                <td><label style="float: left;">Brand:</label></td>
+                <td>Acer</td>
+            </tr>
+           
+            <tr>
+                <td><label style="/*display: block;width: fit-content; margin: auto;*/">Specification:</label></td>
+                <td>CPU: i5 11 gen <br>
+                    GPU: RTX 3050 4GB</td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="" class="detail">More Detail</a></td>
+            </tr>
+       </table>
+    </div>
+    
+    <style>
+        .mydiv2
+        {
+            border: 2px solid red;
+            width: 460px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .mydiv3
+        {
+            border: 2px solid blue;
+            width: 360px;
+            display: inline-block;
+            vertical-align: middle;
+            
+        }
+        .mydiv4
+        {
+            border: 2px solid gold;
+            width: 420px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+    <hr style="border-color: white;border-style: none;">
+    <div class="mydiv2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus tenetur delectus suscipit assumenda, optio ea deleniti consequatur, eaque, cupiditate voluptate vero in. Commodi vel consequatur perferendis ut dicta. Excepturi, enim? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet nobis voluptate. Maxime optio facilis, excepturi tempora nulla iure blanditiis vitae. Deleniti, expedita quibusdam sequi ducimus quaerat possimus eum cupiditate.</div>
+    <div class="mydiv3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident exercitationem sit fugit voluptatibus rerum accusamus iusto et. Ducimus debitis velit illo voluptatum officia odit natus magnam dolore amet eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque consequatur a ratione odio ad nemo ex corrupti? Alias veniam error earum non incidunt corrupti temporibus debitis, a eveniet voluptatem. Nihil.</div>
+    <div class="mydiv4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet at fugit similique illo nulla reprehenderit nemo saepe asperiores, laudantium esse rem quod expedita impedit iure deserunt officia. Odit, a.  Architecto ratione deleniti cumque quaerat dolor vitae laboriosam exercitationem voluptate, maiores nesciunt, optio quidem? Debitis molestias officia enim ratione facere soluta aperiam.</div>
+</body>
+</html>
+<!-- 
+    Display
+    -----------------------------------------
+    inline  => font,a,label,span
+    block   =>p ,div,section,article,aside
+    inline-block
+    flex
+    grid---advanced level
+    table 
+    none
+
+https://git-scm.com/downloads
+https://zwehtet1997.000webhostapp.com/
+git config http.postBuffer 524288000
+
+
+https://zh-testingweb.netlify.app/
+
+
+php code for 10/7/2023-https://www.w3schools.com/php/func_date_date.asp
+error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
+1:22:56
+ -->

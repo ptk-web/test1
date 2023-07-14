@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        #about-us
+        {
+            width: 80%;
+            margin: auto;
+            /* border: 2px solid black; */
+            padding: 15px 15px 13px 15px;
+            font-family: 'Playfair Display', serif;
+            
+           
+        }
+        .aboutus-text
+        {
+            /* border: 2px solid red; */
+            width: 480px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 30px;/*top&bottom=0,left&right=25*/
+        }
+        .aboutus-text > h2
+        {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+        .aboutus-text > p
+        {
+            text-align: justify;
+            line-height: 1.5;
+            font-size: 19px;
+            font-weight: 500;
+
+        }
+        .aboutus-text > a
+        {
+            display: block;
+            width:fit-content;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            background-color: black;
+            color: white;
+            padding: 8px 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+            transition: all 2s;
+        }
+        .aboutus-text > a:hover
+        {
+            background-color: blue;
+
+        }
+        .aboutus-img
+        {
+            /* border: 2px solid blue; */
+            width: 450px;
+            height: 450px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 30px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" font="font-family:Calibri">Web Development</h1>
+    <section id="about-us">
+        <div class="aboutus-text">
+            <h2>About Us</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+            <a href="">Read More</a>
+
+        </div>
+        <div class="aboutus-img">
+            <img src="coffee - Copy.jpg" width="100%" height="100%">
+
+        </div>
+    </section>
+    <style>
+        .about-us
+        {
+            /* border: 2px solid black; */
+            width: 80%;
+            margin: auto;
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            box-shadow: 1px 1px 6px 4px gray;
+            border-radius: 15px;
+            font-family: 'Playfair Display', serif;
+            margin-top: 60px;
+            transition: all 1s;
+
+        }
+        .about-us:hover
+        {
+            transform: scale(1.1);
+        }
+        #aboutus-text
+        {
+            /* border: 2px solid black; */
+            width: 480px;
+
+        }
+        #aboutus-text > h2
+        {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+        #aboutus-text > p
+        {
+            text-align: justify;
+            line-height: 1.5;
+            font-size: 19px;
+            font-weight: 500;
+
+        }
+        #aboutus-text > a
+        {
+            display: block;
+            width:fit-content;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            background-color: black;
+            color: white;
+            padding: 8px 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+            transition: all 1s;
+        }
+        #aboutus-text > a:hover
+        {
+            background-color: blue;
+            transform: translateX(10px);
+
+        }
+        #aboutus-img
+        {
+            /* border: 2px solid black; */
+            width: 450px;
+            height: 450px;
+        }
+    </style>
+    <h1 align="center" font="font-family:Calibri">Web Development</h1>
+    <section class="about-us">
+        <div id="aboutus-text">
+            <h2>About Us</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+            <a href="">Read More</a>
+
+        </div>
+        <div class="aboutus-img">
+            <img src="coffee - Copy.jpg" width="100%" height="100%">
+
+        </div>
+    </section>
+    <style>
+        #dis-flex
+        {
+            border: 2px solid blue;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+             justify-content: space-around; /*most useful */
+            /* justify-content: space-evenly; */
+              flex-wrap:wrap;
+              align-items:center;
+            /* align-content:space-between;(it doesn't work.) */
+              row-gap: 20px;
+
+        }
+        #dis-flex > div
+        {
+            border: 2px solid red;
+            /* height: fit-content; */
+        }
+
+    </style>
+
+    <h2>Flex</h2>
+    <section id="dis-flex">
+        <div  style="width: 390px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident commodi beatae quod molestias, cum culpa, dignissimos unde doloribus eos nam cupiditate, dolores nesciunt modi tenetur praesentium voluptate consequuntur facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum excepturi vero odio incidunt cupiditate atque voluptas dignissimos corrupti itaque quod, corporis iure ipsum fuga perferendis eum nobis velit, hic maiores!
+        </div>
+        <div style="width: 390px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eius quidem quae fugiat? Laudantium obcaecati voluptate eaque quaerat omnis ipsum eveniet explicabo debitis dolor? Nemo debitis vero saepe deserunt voluptas! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quod non quam recusandae eaque perspiciatis et, dolores inventore tempore, quia consequuntur, odio tempora? Tempore doloribus aspernatur pariatur placeat iusto exercitationem.
+        </div>
+        <div style="width: 390px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum id quam praesentium ducimus? Odit ab veritatis quisquam ullam dolorum cupiditate, laudantium aperiam suscipit nihil nam id dignissimos qui repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nisi necessitatibus aperiam expedita, qui voluptatum, doloribus placeat hic minima possimus adipisci sequi asperiores autem porro error tempore corporis deserunt debitis.
+        </div>
+    </section>
+</body>
+</html>
